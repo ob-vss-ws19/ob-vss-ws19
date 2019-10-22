@@ -1,0 +1,9 @@
+syntax = "proto3";
+package echomessages;
+
+// this is the message the actor on node 1 will send to the remote actor on node
+// 2
+message Echo { string Message = 1; }
+
+// this is the message the remote actor should reply with
+message Response { string SomeValue = 1; }
